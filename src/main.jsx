@@ -8,6 +8,7 @@ async function initTG() {
         console.log("Init Tg Env");
         const[miniApp] = init();
         await miniApp.ready();
+        miniApp.setHeaderColor('#fcb69f');
     }  catch (error) {
         console.log("Run desktop")  
 
@@ -55,6 +56,7 @@ async function initTG() {
 }
 
 initTG()
+
 
 createRoot(document.getElementById('root')).render(
   
